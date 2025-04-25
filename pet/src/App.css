@@ -1,8 +1,9 @@
-/* #root {
+#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
 }
 .banner-list {
   color: aquamarine;
@@ -14,4 +15,33 @@
   margin: 0 10px 20px ;
   border: 3px solid black;
   
-} */
+}
+.box-button {
+  display: flex;
+  justify-content: space-between;
+}
+.back-button {
+  color: aqua;
+  border-radius: 50%;
+}
+.arrow-button {
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.arrow-button svg {
+  stroke: #21e254;
+  width: 50px;
+  height: 50px;
+  fill: none;
+  
+}
+.arrow-button:hover {
+  transform: scale(1.2);
+}

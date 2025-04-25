@@ -1,5 +1,6 @@
 import fetchData from "./api doc";
 import { useState, useEffect } from "react";
+import "./App.css";
 
 function CharacterList() {
     // Состояние для данных, загрузок и ошибок
@@ -59,10 +60,11 @@ function CharacterList() {
             <p>Статус: {currentCharacters.status}</p>
             <p>Вид: {currentCharacters.species}</p>
         </div> 
-        <div className="button-left, button" onClick={prevCharacters}><button>Предыдущий товар</button></div>
+        <div className="box-button">
+        <div className="box-button-left" onClick={prevCharacters}><button className="arrow-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 24 24' strokeWidth="2"><path d="M15 18l-6-6 6-6" /></svg></button></div>
       
-      <div className="button-right, button"onClick={nextCharacters}><button>Следующий товар</button></div>
-        
+      <div className="button-right" onClick={nextCharacters}><button className="arrow-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 24 24' strokeWidth="2"><path d="M9 18l6-6-6-6" /></svg></button></div>
+        </div>
             </div>
         
     );
